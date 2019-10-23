@@ -155,11 +155,11 @@ if ($login == false)
 		}
 	  else
 		{
-		echo "[=] Gagal mengambil voucher, silahkan coba lagi.\n";
+		echo "[=] Gagal mengambil voucher :(\n";
 		$claim = claim($verif);
 		if ($claim == false)
 			{
-			echo "[-] Gagal mengambil voucher, silahkan coba lagi.\n";
+			echo "[-] Silahkan coba lagi.\n";
 			}
 		  else
 			{
