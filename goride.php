@@ -93,7 +93,7 @@ function claim($claimtoken)
 		return false;
 		}
 	}
-echo "<font color='cyan'>===========================================================\n";
+echo "<font color="cyan">===========================================================\n";
 echo "####### GAK ADA GOJEK YANG AMAN BY SGBTEAM MAKASSAR #######\n";
 echo "################# FOLLOW LAH IG W @MSWRV ##################\n";
 echo "===========================================================</font>\n";
