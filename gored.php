@@ -93,23 +93,9 @@ function claim($claimtoken)
 		return false;
 		}
 	}
-function claim($claimtoken)
-	{
-	$data = '{"promo_code":"AYOCOBAGOJEK"}';
-	$claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
-	if ($claim['success'] == 1)
-		{
-		return $claim['data']['message'];
-		}
-	  else
-		{
-      save("error_log.txt", json_encode($claim));
-		return false;
-		}
-	}
 echo "===========================================================\n";
-echo "####### GAK ADA GUJEK YANG AMAN BY SGBTEAM MAKASSAR #######\n";
-echo "############## FOLLOW LAH IG W @ABBACUGAMING ##############\n";
+echo "####### GAK ADA GOJEK YANG AMAN BY SGBTEAM MAKASSAR #######\n";
+echo "################# FOLLOW LAH IG W @MSWRV ##################\n";
 echo "===========================================================\n";
 echo "[+] Mau login atau regis? LOGIN = 1 & REGIS = 2: ";
 $type = trim(fgets(STDIN));
