@@ -93,10 +93,10 @@ function claim($claimtoken)
 		return false;
 		}
 	}
-echo "<font color="cyan">===========================================================\n";
+echo "===========================================================\n";
 echo "####### GAK ADA GOJEK YANG AMAN BY SGBTEAM MAKASSAR #######\n";
 echo "################# FOLLOW LAH IG W @MSWRV ##################\n";
-echo "===========================================================</font>\n";
+echo "===========================================================\n";
 echo "[+] Mau login atau regis? LOGIN = 1 & REGIS = 2: ";
 $type = trim(fgets(STDIN));
 if($type == 2){
