@@ -79,9 +79,23 @@ function veriflogin($otp, $token)
 		return false;
 		}
 	}
-function claim($token)
+function claim($claimtoken)
 	{
 	$data = '{"promo_code":"COBAINGOJEK"}';
+	$claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
+	if ($claim['success'] == 1)
+		{
+		return $claim['data']['message'];
+		}
+	  else
+		{
+      save("error_log.txt", json_encode($claim));
+		return false;
+		}
+	}
+function claim($claimtoken)
+	{
+	$data = '{"promo_code":"AYOCOBAGOJEK"}';
 	$claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
 	if ($claim['success'] == 1)
 		{
