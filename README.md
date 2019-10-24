@@ -1,1 +1,1 @@
-# gujek
+# gojek anti primitif
