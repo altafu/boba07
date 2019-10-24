@@ -97,35 +97,35 @@ echo "===========================================================\n";
 echo "####### GAK ADA GUJEK YANG AMAN BY SGBTEAM MAKASSAR #######\n";
 echo "############## FOLLOW LAH IG W @ABBACUGAMING ##############\n";
 echo "===========================================================\n";
-echo "[+] LU MAU LOGIN APA REGIS COK?? LOGIN = 1 & REGIS = 2: ";
+echo "[+] Mau login atau regis? LOGIN = 1 & REGIS = 2: ";
 $type = trim(fgets(STDIN));
 if($type == 2){
-echo "[+] MANTAP ANJING LO MILIH REGIS\n";
-echo "[+] ISI 62 KLO LU MAU DAPTAR AKUN INDOG TRUS 1 UNTUK REGIS NOMER LUAR PANTEQ\n";
-echo "[+] ISI NO HP LO ANJING: ";
+echo "[+] Anda memilih regis!\n";
+echo "[+] Masukkan code '62' untuk nomor indo & '1' untuk nomor luar.\n";
+echo "[+] Masukkan No HP Anda: ";
 $nope = trim(fgets(STDIN));
 $register = register($nope);
 if ($register == false)
 	{
-	echo "[-] GAGAL AMBIL OTP ASUUUUU, NOMERNYA UDAH KEREGIS, COBA GNTI YG LAEN!\n";
+	echo "[-] GAGAL mengambil OTP, No HP telah terdaftar.\n";
 	}
   else
 	{
-	echo "[+] MASUKIN OTP MU YA PANTEQ BKN KNTL MU: ";
+	echo "[+] Masukkan OTP: ";
 	// echo "Enter Number: ";
 	$otp = trim(fgets(STDIN));
 	$verif = verif($otp, $register);
 	if ($verif == false)
 		{
-		echo "[-] GAGAL REGIS AKUNMU ASU GK TAU JUGA KENAPA BISA GINI!\n";
+		echo "[-] GAGAL register, silahkan coba lagi.\n";
 		}
 	  else
 		{
-		echo "[=] MANTAP ANJING DAPAT POCER DARI NADIEM\n";
+		echo "[=] Selamat, voucher berhasil diambil.\n";
 		$claim = claim($verif);
 		if ($claim == false)
 			{
-			echo "[-] GAGAL DAPAT POCER ASU ANJING SIALAN, COBA LAGI LAH PANTEQ\n";
+			echo "[-] Gagal mengambil voucher, silahkan coba lagi.\n";
 			}
 		  else
 			{
@@ -134,32 +134,32 @@ if ($register == false)
 		}
 	}
 }else if($type == 1){
-echo "[+] MANTAP ANJING LO MILIH LOGIN\n";
-echo "[+] ISI 62 KLO LU MAU DAPTAR AKUN INDOG TRUS 1 UNTUK REGIS NOMER LUAR PANTEQ\n";
-echo "[+] MASUKIN NOPEMU ANJING: ";
+echo "[+] Anda memilih login!\n";
+echo "[+] Masukkan code '62' untuk nomor indo & '1' untuk nomor luar.\n";
+echo "[+] Masukkan No HP Anda: ";
 $nope = trim(fgets(STDIN));
 $login = login($nope);
 if ($login == false)
 	{
-	echo "[-] ASU GAGAL AMBIL OTP!\n";
+	echo "[-] GAGAL mengambil OTP, No HP telah terdaftar.\n";
 	}
   else
 	{
-	echo "[+] MASUKIN OTP MU YA PANTEQ BKN KNTL MU: ";
+	echo "[+] Masukkan OTP: ";
 	// echo "Enter Number: ";
 	$otp = trim(fgets(STDIN));
 	$verif = veriflogin($otp, $login);
 	if ($verif == false)
 		{
-		echo "[=] MANTAP ANJING DAPAT POCER DARI NADIEM!\n";
+		echo "[=] Selamat, voucher berhasil diambil.\n";
 		}
 	  else
 		{
-		echo "[=] MANTAP ANJING DAPAT POCER DARI NADIEM\n";
+		echo "[=] Gagal mengambil voucher :(\n";
 		$claim = claim($verif);
 		if ($claim == false)
 			{
-			echo "[-] GAGAL DAPAT POCER ASU ANJING SIALAN, COBA LAGI LAH PANTEQ\n";
+			echo "[-] Silahkan coba lagi.\n";
 			}
 		  else
 			{
