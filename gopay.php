@@ -26,8 +26,8 @@ function curl($url, $fields = null, $headers = null)
         );
 	}
 {
-$secret = 'xxxx-xxxxxxxxx-xxxxxx'; //BEARERTOKENAKUNUTAMA
-$pin = "xxxxxx"; //PINGOPAY
+$secret = '0ce6d8b3-c114-4126-8136-cf7fcb43ca40'; //BEARERTOKENAKUNUTAMA
+$pin = "696969"; //PINGOPAY
 $headers = array();
 $header[] = 'Content-Type: application/json';
 $header[] = 'X-AppVersion: 3.40.0';
