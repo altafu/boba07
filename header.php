@@ -9,7 +9,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
           <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-</head>
+<head>
     <style type="text/css">
         body {
             font-family: 'Quicksand', sans-serif;
